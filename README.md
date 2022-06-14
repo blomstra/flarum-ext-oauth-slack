@@ -19,6 +19,23 @@ composer update blomstra/oauth-slack
 php flarum cache:clear
 ```
 
+## Configuration
+
+Once enabled, this extension will add a `Slack` option to the settings page of `fof/oauth`. Toggle `Slack` on, and hit the configure icon.
+
+Follow the [Slack documentation](https://api.slack.com/authentication/sign-in-with-slack) to create an [application](https://api.slack.com/apps)
+
+It is **imperitive** that you grant the following scopes to your new application at Slack:
+- `openid`
+- `email`
+- `profile`
+
+Set the callback URL as given in the extension settings.
+
+Enter the `Client ID` and `Client Secret` as displayed in the `Basic Information` page at Slack into the Flarum configuration.
+
+Enjoy logging in with your Slack credentials!
+
 ## Links
 
 - [Packagist](https://packagist.org/packages/blomstra/oauth-slack)
