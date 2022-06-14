@@ -40,4 +40,4 @@ Enjoy logging in with your Slack credentials!
 
 - [Packagist](https://packagist.org/packages/blomstra/oauth-slack)
 - [GitHub](https://github.com/blomstra/flarum-ext-oauth-slack)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [Discuss](https://discuss.flarum.org/d/31039)
