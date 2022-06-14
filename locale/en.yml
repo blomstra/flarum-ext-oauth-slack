@@ -10,7 +10,7 @@ fof-oauth:
 
   forum:
     log_in:
-      with_slack_button: '=> fof-oauth.forum.log_in.with_button'
+      with_slack_button: Sign in with Slack
 
     providers:
       slack: '=> fof-oauth.lib.providers.slack'
