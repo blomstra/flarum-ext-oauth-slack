@@ -11,12 +11,12 @@
 
 namespace Blomstra\OAuthSlack\Providers;
 
-use Chadhutchins\OAuth2\Client\Provider\Slack;
+use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
 
-class SlackProvider extends Slack
+class SlackProvider extends AbstractProvider
 {
     public function getBaseAuthorizationUrl()
     {

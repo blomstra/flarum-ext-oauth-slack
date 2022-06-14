@@ -15,13 +15,12 @@ composer require blomstra/oauth-slack:"*"
 ## Updating
 
 ```sh
-composer update blomstra/oauth-slack:"*"
-php flarum migrate
+composer update blomstra/oauth-slack
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/blomstra/oauth-slack)
-- [GitHub](https://github.com/blomstra/oauth-slack)
+- [GitHub](https://github.com/blomstra/flarum-ext-oauth-slack)
 - [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
