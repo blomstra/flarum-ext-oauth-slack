@@ -41,12 +41,19 @@ class Slack extends Provider
         ]);
     }
 
+    public function options(): array
+    {
+        return ['scope' => ['openid', 'email', 'profile']];
+    }
+
     public function suggestions(Registration $registration, $user, string $token)
     {
         $this->verifyEmail($email = $user->getEmail());
 
         $registration
             ->provideTrustedEmail($email)
+            ->provideAvatar($user->getImage192())
+            ->suggestUsername($user->getName())
             ->setPayload($user->toArray());
     }
 }
