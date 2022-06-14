@@ -1,11 +1,20 @@
 <?php
 
+/*
+ * This file is part of blomstra/oauth-slack.
+ *
+ * Copyright (c) 2022 Team Blomstra.
+ *
+ * For the full copyright and license information, please view the LICENSE.md
+ * file that was distributed with this source code.
+ */
+
 namespace Blomstra\OAuthSlack\Providers;
 
+use Chadhutchins\OAuth2\Client\Provider\Slack as SlackProvider;
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
 use League\OAuth2\Client\Provider\AbstractProvider;
-use Chadhutchins\OAuth2\Client\Provider\Slack as SlackProvider;
 
 class Slack extends Provider
 {
