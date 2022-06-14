@@ -11,7 +11,6 @@
 
 namespace Blomstra\OAuthSlack\Providers;
 
-use Chadhutchins\OAuth2\Client\Provider\Slack as SlackProvider;
 use Flarum\Forum\Auth\Registration;
 use FoF\OAuth\Provider;
 use League\OAuth2\Client\Provider\AbstractProvider;
@@ -52,7 +51,7 @@ class Slack extends Provider
 
     public function options(): array
     {
-        return ['user_scope' => ['openid', 'email', 'profile']];
+        return ['scope' => ['openid', 'email', 'profile']];
     }
 
     public function suggestions(Registration $registration, $user, string $token)
