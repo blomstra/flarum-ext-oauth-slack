@@ -1,0 +1,32 @@
+.LogInButton--slack {
+  // https://api.slack.com/authentication/sign-in-with-slack#button_themes
+
+  & when (@config-dark-mode = false) {
+    --button-bg: #fff;
+    --button-color: #000;
+    --border: solid 2px #ddd;
+  }
+
+  & when (@config-dark-mode = true) {
+    --button-bg: #4a154b;
+    --button-color: #fff;
+    --border: none;
+  }
+
+  --button-bg-hover: var(--button-bg);
+
+  border: var(--border, none) !important;
+
+  .icon {
+    &::before {
+      opacity: 0;
+    }
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    // Slack brand logo
+    background-image: url("data:image/svg+xml,%3Csvg width='122.8' height='122.8' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E.st0%7Bfill:%23e01e5a%7D.st1%7Bfill:%2336c5f0%7D.st2%7Bfill:%232eb67d%7D.st3%7Bfill:%23ecb22e%7D%3C/style%3E%3Cpath class='st0' d='M25.8 77.6c0 7.1-5.8 12.9-12.9 12.9S0 84.7 0 77.6s5.8-12.9 12.9-12.9h12.9zM32.3 77.6c0-7.1 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9v32.3c0 7.1-5.8 12.9-12.9 12.9s-12.9-5.8-12.9-12.9z'/%3E%3Cpath class='st1' d='M45.2 25.8c-7.1 0-12.9-5.8-12.9-12.9S38.1 0 45.2 0s12.9 5.8 12.9 12.9v12.9zM45.2 32.3c7.1 0 12.9 5.8 12.9 12.9s-5.8 12.9-12.9 12.9H12.9C5.8 58.1 0 52.3 0 45.2s5.8-12.9 12.9-12.9z'/%3E%3Cpath class='st2' d='M97 45.2c0-7.1 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9-5.8 12.9-12.9 12.9H97zM90.5 45.2c0 7.1-5.8 12.9-12.9 12.9s-12.9-5.8-12.9-12.9V12.9C64.7 5.8 70.5 0 77.6 0s12.9 5.8 12.9 12.9z'/%3E%3Cpath class='st3' d='M77.6 97c7.1 0 12.9 5.8 12.9 12.9s-5.8 12.9-12.9 12.9-12.9-5.8-12.9-12.9V97zM77.6 90.5c-7.1 0-12.9-5.8-12.9-12.9s5.8-12.9 12.9-12.9h32.3c7.1 0 12.9 5.8 12.9 12.9s-5.8 12.9-12.9 12.9z'/%3E%3C/svg%3E");
+  }
+}

@@ -15,6 +15,9 @@ use Flarum\Extend;
 use FoF\OAuth\Extend as OAuthExtend;
 
 return [
+    (new Extend\Frontend('forum'))
+        ->css(__DIR__.'/less/forum.less'),
+
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
