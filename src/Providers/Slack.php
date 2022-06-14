@@ -43,7 +43,7 @@ class Slack extends Provider
 
     public function options(): array
     {
-        return ['scope' => ['openid', 'email', 'profile']];
+        return ['user_scope' => ['openid', 'email', 'profile']];
     }
 
     public function suggestions(Registration $registration, $user, string $token)
